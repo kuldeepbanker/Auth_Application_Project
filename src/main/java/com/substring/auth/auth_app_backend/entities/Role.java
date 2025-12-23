@@ -20,4 +20,6 @@ public class Role
     private UUID id = UUID.randomUUID();
     @Column(unique = true,nullable = false)
     private String name;
+    private String age;
+    private String address;
 }
