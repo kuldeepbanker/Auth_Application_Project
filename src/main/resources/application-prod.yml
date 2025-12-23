@@ -1,0 +1,3 @@
+#this is productions level data configuration for database
+server:
+  port: 8085

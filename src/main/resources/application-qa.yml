@@ -1,0 +1,4 @@
+#this is QA configurations part for database
+
+server:
+  port: 8084
