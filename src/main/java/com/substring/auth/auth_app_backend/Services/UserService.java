@@ -2,23 +2,31 @@ package com.substring.auth.auth_app_backend.Services;
 
 import com.substring.auth.auth_app_backend.dtos.UserDto;
 
-public interface UserService
-{
-    //Create User
-    UserDto createdUser(UserDto userDto);
+import java.util.UUID;
 
-    //Get User by Email
+public interface UserService {
+
+    //create user
+    UserDto createUser(UserDto userDto);
+
+    //get user by email
     UserDto getUserByEmail(String email);
 
-    //Update User
+    //update user
     UserDto updateUser(UserDto userDto, String userId);
 
-    //Delete User
+    //delete user
+    void deleteUser(String userId);
+
     void deletUser(String userId);
 
-    //Get UserBy Id
+    //get user by id
     UserDto getUserById(String userId);
 
-    //Get all User
-    Iterable<UserDto>getAllUsers();
+    //get all users
+    Iterable<UserDto> getAllUsers();
+
+    // user service se related __
+
+
 }
